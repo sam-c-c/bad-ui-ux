@@ -11,6 +11,7 @@ The issues with this application are:
 - Cookies notice on the landing page. Everyone loves a good cookie popup don't they?
 - The button on the landing page to enter the site redirects back to the landing page. There is another button hidden on the left side of the page.
 - On the products page, the layout has a navigation icon to take you to the products page but actually take you back to the landing page.
+- The nav bar contains a don't click button. Don't press it.
 - The products themselves are hard to read and included in a scrollbox.
 - The View more button on the products is broken and actually causes the products to reorder in the UI.
 - There is an order button at the top of the page that doesn't explain what what it does. It might reorder the products or you might get a nice treat through the post.
