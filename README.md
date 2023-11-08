@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## About
+
+This was built as part of the React month challenge at work where people built the worst UI / UX experience using React.
+
+I created a two page application for a made up company called KitchenProdz who sell kitchen equipment.
+
+The issues with this application are:
+
+- Colour scheme is awful and hasn't got great contrast. Coupled with the background makes it vomit inducing.
+- There is a landing page that serves no benefit.
+- The button on the landing page to enter the site redirects back to the landing page. There is another button hidden on the left side of the page.
+- On the products page, the layout has a navigation icon to take you to the products page but actually take you back to the landing page.
+- The products themselves are hard to read and included in a scrollbox.
+- The View more button on the products is broken and actually causes the products to reorder in the UI.
+- There is an order button at the top of the page that doesn't explain what what it does. It might reorder the products or you might get a nice treat through the post.
+- Not mobile friendly as nobody uses their phone these days to view websites ;-)
 
 ## Getting Started
+
+Built with Node v20.6.1.
 
 First, run the development server:
 
 ```bash
+npm i
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technology
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+React
+NextJs
+MUI
+Typescript
