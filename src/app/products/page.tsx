@@ -20,8 +20,8 @@ export default function Products() {
     }
 
     function orderOnClickHandler() {
-        let randomProducts = products.sort(() => .5 - Math.random());
-        setSelectedProduct(randomProducts[0]);
+        let randomProductIndex = Math.floor(Math.random() * products.length)
+        setSelectedProduct(products[randomProductIndex]);
         setOpen(true);
     }
 
