@@ -1,6 +1,7 @@
 import { Grid, Typography, Button, AppBar, Toolbar, Box } from '@mui/material'
 import Image from 'next/image'
 import Link from 'next/link'
+import logo from '../../public/logo.png'
 
 export default function Home() {
   const style = {
@@ -12,7 +13,7 @@ export default function Home() {
       <Box sx={{flexGrow: 1}}>
         <AppBar position="fixed" sx={{backgroundColor: 'limegreen'}}>
             <Toolbar>
-              <Image src="/logo.png" height={100} width={100} alt="logo" />
+              <Image src={logo} height={100} width={100} alt="logo" />
             </Toolbar>
           </AppBar>
       </Box>

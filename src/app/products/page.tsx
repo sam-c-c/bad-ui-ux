@@ -5,6 +5,7 @@ import CardView from "../components/card-view";
 import { useState } from "react";
 import Image from 'next/image';
 import getProducts from "../data/products";
+import logo from '../../../public/logo.png'
 
 export default function Products() {
 
@@ -43,7 +44,7 @@ export default function Products() {
             <Box sx={{flexGrow: 1}}>
                 <AppBar position="static" sx={{backgroundColor: 'limegreen'}}>
                     <Toolbar>
-                        <Image src="/logo.png" height={100} width={100} alt="logo" />
+                        <Image src={logo} height={100} width={100} alt="logo" />
                         <Button href="/" sx={{color: 'hotpink'}}>Products</Button>
                     </Toolbar>
                 </AppBar>
