@@ -1,10 +1,9 @@
 "use client"
 
-import { Grid, Typography, Button, AppBar, Toolbar, Box, Modal } from '@mui/material'
-import Image from 'next/image'
+import { Grid, Typography, Button, Box, Modal } from '@mui/material'
 import Link from 'next/link'
-import logo from '../../public/logo.png'
 import { useState } from 'react';
+import Layout from "@/app/components/layout";
 
 export default function Home() {
   const [modalOpen, setModalOpen] = useState(true);
@@ -13,6 +12,7 @@ export default function Home() {
   const style = {
     textAlign: 'center', marginBottom: '20px', color: 'white'
   };
+  
   const modalStyle = {
     textAlign: 'center', color: 'white', backgroundColor: 'black', padding: '50px',
     position: 'absolute',
@@ -22,14 +22,7 @@ export default function Home() {
   };
 
   return (
-    <>
-      <Box sx={{flexGrow: 1}}>
-        <AppBar position="fixed" sx={{backgroundColor: 'limegreen'}}>
-            <Toolbar>
-              <Image src={logo} height={100} width={100} alt="logo" />
-            </Toolbar>
-          </AppBar>
-      </Box>
+    <Layout showNavItems={false}>
       <Grid container mt={"100px"}>
         <Grid item xs={12} sx={{textAlign: 'center'}}>
           <Typography variant='h1' sx={style}>Welcome to KitchenProdz. Click Enter below.</Typography>
@@ -51,6 +44,6 @@ export default function Home() {
           <Button variant='contained' onClick={handleClose}>Ok, got it!</Button>
           </Box>
        </Modal>
-    </>
+    </Layout>
   )
 }

@@ -8,6 +8,7 @@ The issues with this application are:
 
 - Colour scheme is awful and hasn't got great contrast. Coupled with the background makes it vomit inducing.
 - There is a landing page that serves no benefit.
+- Cookies notice on the landing page. Everyone loves a good cookie popup don't they?
 - The button on the landing page to enter the site redirects back to the landing page. There is another button hidden on the left side of the page.
 - On the products page, the layout has a navigation icon to take you to the products page but actually take you back to the landing page.
 - The products themselves are hard to read and included in a scrollbox.

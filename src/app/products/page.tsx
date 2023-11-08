@@ -1,11 +1,10 @@
 "use client"
 
-import { AppBar, Box, Button, Grid, Modal, Toolbar, Typography } from "@mui/material";
+import { Box, Button, Grid, Modal, Typography } from "@mui/material";
 import CardView from "../components/card-view";
 import { useState } from "react";
-import Image from 'next/image';
 import getProducts from "../data/products";
-import logo from '../../../public/logo.png'
+import Layout from "@/app/components/layout";
 
 export default function Products() {
 
@@ -40,15 +39,7 @@ export default function Products() {
     };
     
     return (
-        <>
-            <Box sx={{flexGrow: 1}}>
-                <AppBar position="static" sx={{backgroundColor: 'limegreen'}}>
-                    <Toolbar>
-                        <Image src={logo} height={100} width={100} alt="logo" />
-                        <Button href="/" sx={{color: 'hotpink'}}>Products</Button>
-                    </Toolbar>
-                </AppBar>
-            </Box>
+        <Layout showNavItems={true}>
             <Grid container>
                 <Grid item xs={12} sx={{textAlign: 'center'}}>
                     <Typography variant="h3" sx={{ color: "white" }}>Latest kitchen products</Typography>
@@ -78,6 +69,6 @@ export default function Products() {
                     </Typography>
                 </Box>
             </Modal>
-        </>
+        </Layout>
     )
 }
